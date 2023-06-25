@@ -24,3 +24,18 @@ console.warn(typeof person, person);
 
 console.info(person.name);
 console.debug(person.age);
+
+function h() {
+  return "h";
+}
+
+const f = function () {
+  return "f";
+};
+
+const a = () => {
+  return "a";
+};
+
+console.info(h());
+console.info(f(), a());

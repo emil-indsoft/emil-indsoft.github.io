@@ -34,6 +34,10 @@ function ckickOnMenu(e) {
 
 function showSkillsList(skills) {
   const ul = $("#skills ul");
+
+  skills.sort((a, b) => b.enorcements - a.enorcements);
+  //return a.name.localeCompare(b.name);
+
   const skillsHTML = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name} <span> · ${skill.enorcements}</span></li>`;

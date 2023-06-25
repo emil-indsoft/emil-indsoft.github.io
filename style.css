@@ -126,6 +126,21 @@ li.favorite {
   background-color: #fff;
 }
 
+#languages table {
+  width: 50%;
+  min-width: 330px;
+  border-collapse: collapse;
+}
+
+#languages table th,
+#languages table td {
+  border: 1px solid #0798ab;
+  padding: 5px;
+}
+#languages table th {
+  background-color: rgb(135, 217, 238);
+}
+
 footer {
   padding: 10px 10px 8px 10px;
   background: #0798ab99;

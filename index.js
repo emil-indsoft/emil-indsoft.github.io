@@ -22,3 +22,16 @@ function displayPage(id) {
 }
 
 displayPage(activePage);
+
+function ckickOnMenu(e) {
+  if (e.target.matches("a")) {
+    var id = e.target.dataset.page;
+    if (id) {
+      displayPage(id);
+    } else {
+      console.warn(`please use <a data-page="page-id"> `);
+    }
+  }
+}
+
+$("#top-menu-bar").addEventListener("click", ckickOnMenu);

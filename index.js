@@ -34,17 +34,16 @@ function ckickOnMenu(e) {
 
 function showSkillsList() {
   var skills = [
-    { name: "HTML", favorite: true },
-    { name: "CSS" },
-    { name: "JS", favorite: true },
+    { name: "HTML", favorite: true, enorcements: 30 },
+    { name: "CSS", enorcements: 5 },
+    { name: "JS", favorite: true, enorcements: 10 },
   ];
 
   var ul = $("#skills ul");
 
   var skillsHTML = skills.map(function (skill) {
-    return `<li ${
-      skill.favorite ? ' class="favorite"' : ""
-    }>${skill.name}</li>`;
+    const cls = skill.favorite ? "favorite" : "";
+    return `<li class="${cls}">${skill.name} <span> · ${skill.enorcements}</span></li>`;
   });
   ul.innerHTML = skillsHTML.join("");
 }

@@ -78,9 +78,14 @@ label {
   color: darkred;
 }
 
-.favorite {
+li.favorite {
   font-weight: bold;
   color: green;
+}
+
+#skills ul li span {
+  font-weight: 200;
+  color: gray;
 }
 
 #top-menu-bar {

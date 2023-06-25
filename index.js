@@ -43,9 +43,7 @@ function showSkillsList(skills) {
 
 function getSkillsRequest() {
   fetch("skills.json").then(function (r) {
-    r.json().then(function (skills) {
-      showSkillsList(skills);
-    });
+    r.json().then(showSkillsList);
   });
 }
 
